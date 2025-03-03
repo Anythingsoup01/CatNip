@@ -10,3 +10,9 @@
 [submodule "vendor/imgui"]
 	path = vendor/imgui
 	url = https://github.com/anythingsoup01/imgui
+[submodule "vendor/stb"]
+	path = vendor/stb
+	url = https://github.com/nothings/stb
+[submodule "vendor/ImGuiFileDialog"]
+	path = vendor/ImGuiFileDialog
+	url = https://github.com/aiekick/ImGuiFileDialog
