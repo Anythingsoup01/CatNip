@@ -1,27 +1,27 @@
-project "Ferret"
+project "CatNipApp"
     language "C++"
     dialect "17"
-    kind "StaticLib"
+    kind "ConsoleApp"
 
     files
     {
         "src/*.cpp",
-        "src/*.h"
+        "src/*.h",
     }
 
     includedirs
     {
-        "src",
+        "$(ROOTDIR)/Ferret/src",
+        "$(ROOTDIR)/CatNip/src",
         "$(ROOTDIR)/vendor/glfw/include",
         "$(ROOTDIR)/vendor/glad/include",
         "$(ROOTDIR)/vendor/glm",
         "$(ROOTDIR)/vendor/imgui",
+        "$(ROOTDIR)/vendor/ImGuiFileDialog",
     }
 
     links
     {
-        "glfw",
-        "Glad",
-        "GL",
-        "ImGui"
+        "Ferret",
+        "CatNip"
     }
